@@ -20,10 +20,14 @@
 
 ; views
 (defn home [request]
-  (render-file "index.html" {}))
+  (render-file "index.html" {:nav_active "home"}))
+
+(defn about [request]
+  (render-file "about.html" {:nav_active "about"}))
 
 ; routes
 (defroutes app
   (GET "/" [] home)
+  (GET "/about" [] about)
   (route/resources "/")
   (route/not-found "<h1>Page not found</h1>"))

@@ -1,8 +1,18 @@
-{% extends "base.html" %}
 {% block header %}
-<div id="header">
-    <h1><img class="img-circle" alt="" height="140" 
-                                       src="https://avatars2.githubusercontent.com/u/3682272?v=3&amp;s=460" width="140">
-        Paulo Bu <small>I'm a software developer and I rock ;)</small></h1>
+<div class="header clearfix">
+    <nav>
+        <ul class="nav nav-pills pull-right">
+            {% ifequal nav_active "home" %}
+            <li role="presentation" class="active"><a href="/">Home</a></li>
+            <li role="presentation"><a href="/about">About me</a></li>
+            {% else %}
+            <li role="presentation"><a href="/">Home</a></li>
+            <li role="presentation" class="active"><a href="/about">About me</a></li>
+            {% endifequal %}
+        </ul>
+    </nav>
+        
+    <img class="img-circle" alt="" height="50" 
+         src="https://avatars2.githubusercontent.com/u/3682272?v=3&amp;s=460" width="50">
 </div>
 {% endblock header %}

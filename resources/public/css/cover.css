@@ -96,3 +96,25 @@ a {
     margin-left: 250px;
     font-weight: 300;
 }
+
+.about-image {
+    margin-right:20px;
+    float:left;
+}
+
+@media screen and (max-width: 420px) {
+    ul.links {
+        font-size:11px;
+    }
+}
+@media screen and (max-width: 768px) {
+  .about-image {
+      display: none;
+  }
+  
+  #about-content {
+      font-size: 15px;
+      margin-left: 0;
+      font-weight: 300;
+  }
+}

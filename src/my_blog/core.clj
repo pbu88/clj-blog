@@ -5,12 +5,14 @@
 (use 'ring.util.response)
 (use 'selmer.parser)
 
+(set-resource-path! (clojure.java.io/resource "templates"))
+
 ; views
 (defn home [request]
-  (render-file "templates/index.html" {:nav_active "home"}))
+  (render-file "index.html" {:nav_active "home"}))
 
 (defn about [request]
-  (render-file "templates/about.html" {:nav_active "about"}))
+  (render-file "about.html" {:nav_active "about"}))
 
 ; routes
 (defroutes app

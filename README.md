@@ -1,14 +1,7 @@
-# my-blog
+# My Personal Web Site
 
-A Clojure library designed to ... well, that part is up to you.
+Not much to say, just a small place where I can drop some stuff and info about me and what I like and what I do :)
 
-## Usage
+# Specifications
 
-FIXME
-
-## License
-
-Copyright © 2015 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Written in Clojure with the helps of Ring, Compojure and Selmer libraries and hosted in nginx with nginx-clojure
